@@ -1,0 +1,35 @@
+<div class="flex flex-col items-center pt-10 pb-20  max-md:px-5 animate-slidein [--slidein-delay:300ms] opacity-0">
+
+    <div class="flex gap-5 w-full max-w-[1240px] max-md:flex-wrap max-md:max-w-full">
+        <div class="flex-auto text-2xl font-semibold text-blue-950">
+            <a href="#">Sachin chobey</a>
+        </div>
+        <div style="display: flex;align-items: center;"
+            class="header4 flex gap-5 justify-between my-auto text-lg whitespace-nowrap text-blue-950">
+            <ul class="menu4">
+                <li [class.active]="isActive('/home')" (click)="setActive('/home')">
+                    <a class="text-blue-950" routerLink="/home">Home</a>
+                </li>
+                <li [class.active]="isActive('/about')" (click)="setActive('/about')">
+                    <a class="text-blue-950" routerLink="/about">About</a>
+                </li>
+                <li [class.active]="isActive('/work')" (click)="setActive('/work')">
+                    <a class="text-blue-950" routerLink="/work">Work</a>
+                </li>
+                <li [class.active]="isActive('/contact')" (click)="setActive('/contact')">
+                    <a class="text-blue-950" routerLink="/contact">Contact</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="flex gap-5 justify-between">
+            <a target="_blank" href="https://www.linkedin.com/in/sachin-chobey-2731ba228/">
+                <img loading="lazy" src="../../../assets/icons/linkdin.png" />
+            </a>
+            <a target="_blank" href="https://www.instagram.com/sachin_1720/">
+                <img loading="lazy" src="../../../assets/icons/instagram.png" />
+
+            </a>
+        </div>
+    </div>
+</div>
